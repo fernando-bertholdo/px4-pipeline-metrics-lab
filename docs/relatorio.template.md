@@ -81,6 +81,28 @@ Página de Actions: <https://github.com/<!--REPO-->/actions>.
 > A coleta usa `--only-logged`, mantendo apenas os 17 runs canônicos do
 > `variation_log.csv` (runs de aquecimento/órfãos são descartados).
 
+### 4.1 Prints das execuções reais
+
+**Lista de execuções no GitHub Actions** — variações nomeadas, autor `fernando-bertholdo`, com o `failing` (#16) em vermelho:
+
+![Lista de runs reais no GitHub Actions](../figures/print_actions_runs_list.png)
+
+**Achado principal na prática — jobs sequenciais × paralelos** (mesmo pipeline; muda só o `needs:`):
+
+`baseline_final` #23 — jobs **sequenciais**, total **31s** (lint→test encadeados):
+
+![Run sequencial de 31s](../figures/print_run_baseline_seq.png)
+
+`jobs_parallel_2x` #22 — jobs **paralelos**, total **15s** (lint e test concorrentes, sem `needs`):
+
+![Run paralelo de 15s](../figures/print_run_jobs_parallel.png)
+
+**Teste lento dominando a cauda** — `slow_test` #15, total **1m 0s** (job de teste = 41s por causa de um `sleep(30)`):
+
+![Run com teste lento de 1 minuto](../figures/print_run_slow_test.png)
+
+> Os prints reais confirmam visualmente os números da API: paralelizar jobs leva o pipeline de **31s → 15s**, e um único teste genuinamente lento sozinho **dobra** o tempo total.
+
 ---
 
 ## 5. Resultados
