@@ -1,0 +1,4 @@
+# Dependências apenas para a análise local (gráficos). O coletor
+# (scripts/collect_metrics.py) não depende de nada além da stdlib.
+pandas>=2.0
+matplotlib>=3.7

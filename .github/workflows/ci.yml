@@ -1,0 +1,83 @@
+name: ci
+
+# Cada push em main dispara um run. As variações do experimento são commits
+# que alteram experiment.env (knobs de step) e/ou a linha MARKER:NEEDS
+# (paralelismo de jobs). Ver docs/experimento.md.
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load experiment knobs
+        run: cat experiment.env >> "$GITHUB_ENV"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Cache pip
+        if: ${{ env.CACHE == 'on' }}
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements*.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+      - name: Install dev deps
+        run: pip install -r requirements-dev.txt
+      - name: Ruff (análise estática)
+        run: ruff check . --output-format=github
+
+  test:
+    needs: lint  # MARKER:NEEDS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load experiment knobs
+        run: cat experiment.env >> "$GITHUB_ENV"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Cache pip
+        if: ${{ env.CACHE == 'on' }}
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements*.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+      - name: Install dev deps
+        run: pip install -r requirements-dev.txt
+      - name: Run tests (pytest)
+        env:
+          DRONEMETRICS_TEST_SCALE: ${{ env.TEST_SCALE }}
+          DRONEMETRICS_ENABLE_SLOW: ${{ env.ENABLE_SLOW }}
+          DRONEMETRICS_FORCE_FAIL: ${{ env.FORCE_FAIL }}
+        run: |
+          mkdir -p reports
+          PARALLEL_ARGS=""
+          if [ "${PYTEST_PARALLEL}" = "on" ]; then
+            PARALLEL_ARGS="-n auto"
+          fi
+          echo "pytest args: '${PARALLEL_ARGS}' | scale=${TEST_SCALE} slow=${ENABLE_SLOW} fail=${FORCE_FAIL}"
+          pytest ${PARALLEL_ARGS} \
+            -o addopts="" \
+            --junitxml=reports/junit.xml \
+            --cov=src --cov-report=xml:reports/coverage.xml
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: reports/
+          retention-days: 7

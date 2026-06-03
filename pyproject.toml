@@ -1,0 +1,24 @@
+[project]
+name = "dronemetrics"
+version = "0.1.0"
+description = "KPIs de missão para drones — cobaia de um experimento de performance de CI/CD"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+# src-layout: o pacote vive em src/, e os testes importam tests.experiment_config
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# scripts/ são ferramentas de análise (não a lib sob experimento); docs/ é texto.
+# Excluí-los mantém o job de lint estável entre as variações.
+extend-exclude = ["scripts", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["dronemetrics", "tests"]

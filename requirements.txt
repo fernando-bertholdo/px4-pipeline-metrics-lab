@@ -1,0 +1,3 @@
+# Runtime deps da dronemetrics: nenhuma (apenas stdlib).
+# O arquivo existe para servir de chave de cache do pip no CI
+# (hashFiles('requirements*.txt')).

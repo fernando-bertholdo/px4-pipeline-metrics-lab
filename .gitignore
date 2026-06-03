@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+coverage.xml
+
+# Relatórios de teste gerados localmente
+reports/
+
+# Dados brutos baixados da API (regeneráveis); o CSV/JSON final é versionado
+data/raw/
+
+# Ambiente
+.venv/
+venv/
+.env
+
+# SO
+.DS_Store
