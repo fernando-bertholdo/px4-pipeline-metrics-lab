@@ -9,7 +9,7 @@ barata em CI — o que dá um sinal limpo para medir o **pipeline**, não o app.
 > **Tese da Aula 11 que este experimento testa empiricamente:** *"pipeline
 > correto não é pipeline rápido; você não melhora o que não mede"*. Aqui a
 > gente mede, com dados reais, o efeito de cache e paralelismo — e checa se o
-> que o professor previu acontece no nosso runner.
+> que o professor Hermano previu acontece no nosso runner.
 
 ## O que tem aqui
 
