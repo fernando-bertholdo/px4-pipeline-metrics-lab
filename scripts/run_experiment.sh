@@ -11,6 +11,15 @@ set -uo pipefail
 
 LOG="data/raw/run_experiment.log"
 mkdir -p data/raw
+
+# trava de instância única (evita dois drivers concorrentes no mesmo repo)
+LOCK="data/raw/.experiment.lock"
+if [ -e "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
+  echo "outro driver já está rodando (PID $(cat "$LOCK")). saindo."; exit 1
+fi
+echo $$ > "$LOCK"
+trap 'rm -f "$LOCK"' EXIT
+
 echo "commit_sha,label,hypothesis,knobs" > data/variation_log.csv
 
 # Identidade de commit (e-mail noreply do GitHub -> atribui à conta sem expor e-mail)
@@ -64,11 +73,17 @@ variation() {  # $1 label  $2 hypothesis  $3 commit-subject
   write_env; set_needs "$JOBS"
   git add experiment.env .github/workflows/ci.yml
   git commit -q --allow-empty -m "$3"
-  local sha; sha=$(git rev-parse HEAD)
+  # integra qualquer alteração remota (ex.: edição manual no GitHub) antes do push,
+  # garantindo fast-forward mesmo se alguém commitar no repo durante o experimento
+  git pull --rebase -q origin main 2>/dev/null || { git rebase --abort 2>/dev/null; true; }
+  if ! git push -q origin main 2>/dev/null; then
+    git pull --rebase -q origin main 2>/dev/null || true
+    git push -q origin main 2>/dev/null || echo "    [warn] push falhou para $1"
+  fi
+  local sha; sha=$(git rev-parse HEAD)  # SHA final, já pós-rebase
   printf '%s,%s,"%s","%s"\n' "$sha" "$1" "$2" \
     "CACHE=$CACHE;PYTEST_PARALLEL=$PARALLEL;SCALE=$SCALE;SLOW=$SLOW;FAIL=$FAIL;JOBS=$JOBS" \
     >> data/variation_log.csv
-  git push -q origin main
   echo "[$(date +%H:%M:%S)] $1 — ${3}"
   wait_for_run "$sha"
 }
