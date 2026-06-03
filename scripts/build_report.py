@@ -29,15 +29,17 @@ def read_csv(path: Path) -> list[dict]:
 
 def runs_table(rows: list[dict], repo: str) -> str:
     head = (
-        "| # | run_id | variação | status | workflow (s) | testes | falhas | link |\n"
-        "|---|--------|----------|--------|--------------|--------|--------|------|\n"
+        "| # | run_id | commit | variação | status | workflow (s) | testes | falhas | link |\n"
+        "|---|--------|--------|----------|--------|--------------|--------|--------|------|\n"
     )
     body = []
     for i, r in enumerate(rows, 1):
         rid = r["run_id"]
+        sha = r.get("commit_sha", "")
         link = f"https://github.com/{repo}/actions/runs/{rid}"
+        commit = f"[`{sha}`](https://github.com/{repo}/commit/{sha})"
         body.append(
-            f"| {i} | `{rid}` | {r.get('variation','')} | {r.get('status','')} "
+            f"| {i} | `{rid}` | {commit} | {r.get('variation','')} | {r.get('status','')} "
             f"| {r.get('workflow_duration','')} | {r.get('test_count','')} "
             f"| {r.get('test_failures','')} | [run]({link}) |"
         )

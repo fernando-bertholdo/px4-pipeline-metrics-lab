@@ -1,6 +1,6 @@
 # Relatório técnico — Performance de um pipeline CI/CD no GitHub Actions
 
-**Repositório:** [`fernando-bertholdo/px4-pipeline-metrics-lab`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab) · **Aula 11 — Performance no SITL e CI** (Inteli, Módulo 10) · gerado em `2026-06-03 17:23 UTC`
+**Repositório:** [`fernando-bertholdo/px4-pipeline-metrics-lab`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab) · **Aula 11 — Performance no SITL e CI** (Inteli, Módulo 10) · gerado em `2026-06-03 17:28 UTC`
 
 > Relatório **gerado por código** (`scripts/build_report.py`): as tabelas de
 > execuções e de estatísticas abaixo são montadas a partir dos dados reais
@@ -72,25 +72,25 @@ da interface** — tudo vem da API.
 Todas as execuções abaixo são reais e clicáveis (run IDs e commits verdadeiros).
 Página de Actions: <https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions>.
 
-| # | run_id | variação | status | workflow (s) | testes | falhas | link |
-|---|--------|----------|--------|--------------|--------|--------|------|
-| 1 | `26900480405` | baseline | success | 31.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900480405) |
-| 2 | `26900514380` | baseline | success | 26.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900514380) |
-| 3 | `26900549710` | baseline | success | 27.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900549710) |
-| 4 | `26900582645` | no_cache | success | 24.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900582645) |
-| 5 | `26900612712` | no_cache | success | 28.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900612712) |
-| 6 | `26900647962` | tests_2x | success | 30.0 | 178 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900647962) |
-| 7 | `26900683781` | tests_4x | success | 24.0 | 338 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900683781) |
-| 8 | `26900714589` | tests_8x | success | 33.0 | 658 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900714589) |
-| 9 | `26900754647` | slow_test | success | 60.0 | 99 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900754647) |
-| 10 | `26900815013` | failing | failure | 25.0 | 98 | 1 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900815013) |
-| 11 | `26900842978` | pytest_parallel | success | 32.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900842978) |
-| 12 | `26900881401` | pytest_parallel | success | 29.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900881401) |
-| 13 | `26900915412` | pytest_parallel_4x | success | 29.0 | 338 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900915412) |
-| 14 | `26900950206` | jobs_parallel | success | 18.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900950206) |
-| 15 | `26900973343` | jobs_parallel | success | 17.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900973343) |
-| 16 | `26900999098` | jobs_parallel_2x | success | 15.0 | 178 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900999098) |
-| 17 | `26901019048` | baseline_final | success | 31.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26901019048) |
+| # | run_id | commit | variação | status | workflow (s) | testes | falhas | link |
+|---|--------|--------|----------|--------|--------------|--------|--------|------|
+| 1 | `26900480405` | [`11533356efdb`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/11533356efdb) | baseline | success | 31.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900480405) |
+| 2 | `26900514380` | [`6a6273635625`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/6a6273635625) | baseline | success | 26.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900514380) |
+| 3 | `26900549710` | [`cdaba569da16`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/cdaba569da16) | baseline | success | 27.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900549710) |
+| 4 | `26900582645` | [`93d12b19aa9d`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/93d12b19aa9d) | no_cache | success | 24.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900582645) |
+| 5 | `26900612712` | [`f16757329247`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/f16757329247) | no_cache | success | 28.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900612712) |
+| 6 | `26900647962` | [`831607e4ac63`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/831607e4ac63) | tests_2x | success | 30.0 | 178 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900647962) |
+| 7 | `26900683781` | [`ec928cbe59db`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/ec928cbe59db) | tests_4x | success | 24.0 | 338 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900683781) |
+| 8 | `26900714589` | [`4b3ab3117400`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/4b3ab3117400) | tests_8x | success | 33.0 | 658 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900714589) |
+| 9 | `26900754647` | [`da4dc95519ca`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/da4dc95519ca) | slow_test | success | 60.0 | 99 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900754647) |
+| 10 | `26900815013` | [`c23aa7344d47`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/c23aa7344d47) | failing | failure | 25.0 | 98 | 1 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900815013) |
+| 11 | `26900842978` | [`0245d52bffd3`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/0245d52bffd3) | pytest_parallel | success | 32.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900842978) |
+| 12 | `26900881401` | [`76b01651ed20`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/76b01651ed20) | pytest_parallel | success | 29.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900881401) |
+| 13 | `26900915412` | [`126c584f5e47`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/126c584f5e47) | pytest_parallel_4x | success | 29.0 | 338 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900915412) |
+| 14 | `26900950206` | [`f91162c2da81`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/f91162c2da81) | jobs_parallel | success | 18.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900950206) |
+| 15 | `26900973343` | [`1d2ac182153c`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/1d2ac182153c) | jobs_parallel | success | 17.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900973343) |
+| 16 | `26900999098` | [`85204ae23ad3`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/85204ae23ad3) | jobs_parallel_2x | success | 15.0 | 178 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26900999098) |
+| 17 | `26901019048` | [`abb47b1d7a04`](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/commit/abb47b1d7a04) | baseline_final | success | 31.0 | 98 | 0 | [run](https://github.com/fernando-bertholdo/px4-pipeline-metrics-lab/actions/runs/26901019048) |
 
 > Observação de honestidade experimental: durante a 1ª tentativa, um commit manual
 > no `README` (feito pela interface web do GitHub) colidiu com o driver e quebrou a

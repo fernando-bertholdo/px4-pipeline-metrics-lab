@@ -18,5 +18,8 @@ data/raw/
 venv/
 .env
 
+# Relatório exportado (o canônico é o .md; o .docx é só conveniência)
+*.docx
+
 # SO
 .DS_Store
