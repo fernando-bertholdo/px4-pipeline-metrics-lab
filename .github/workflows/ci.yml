@@ -39,7 +39,7 @@ jobs:
         run: ruff check . --output-format=github
 
   test:
-    needs: lint  # MARKER:NEEDS
+    # MARKER:NEEDS (parallel: sem needs)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
