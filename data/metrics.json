@@ -1,0 +1,2464 @@
+[
+  {
+    "run_id": 26900480405,
+    "commit_sha": "11533356efdb32a9d2f4238f0ef5b14fba50e15d",
+    "commit_message": "ci: baseline #1 (cache on, jobs sequenciais, 1x)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 31.0,
+    "timestamp": "2026-06-03T17:06:20Z",
+    "lead_time_s": 41.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.254,
+    "avg_test_time_s": 0.0026,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900514380,
+    "commit_sha": "6a627363562555ae249373a2e61d9cda8a368d27",
+    "commit_message": "ci: baseline #2 [repeat]",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 26.0,
+    "timestamp": "2026-06-03T17:07:01Z",
+    "lead_time_s": 34.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.252,
+    "avg_test_time_s": 0.0026,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900549710,
+    "commit_sha": "cdaba569da16b63b90fdff33fd4a58c653d8fa4d",
+    "commit_message": "ci: baseline #3 [repeat]",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 27.0,
+    "timestamp": "2026-06-03T17:07:42Z",
+    "lead_time_s": 35.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.25,
+    "avg_test_time_s": 0.0026,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 10.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 4.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 12.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900582645,
+    "commit_sha": "93d12b19aa9d4523943de17366a1f63af9e5035f",
+    "commit_message": "ci: no_cache #1 (CACHE=off)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 24.0,
+    "timestamp": "2026-06-03T17:08:20Z",
+    "lead_time_s": 29.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.231,
+    "avg_test_time_s": 0.0024,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 8.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 10.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 4.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900612712,
+    "commit_sha": "f16757329247f16e66277ed1040600a7d51f53e0",
+    "commit_message": "ci: no_cache #2 (CACHE=off) [repeat]",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 28.0,
+    "timestamp": "2026-06-03T17:08:55Z",
+    "lead_time_s": 36.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.253,
+    "avg_test_time_s": 0.0026,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900647962,
+    "commit_sha": "831607e4ac6390f59ee9b4e8845971bb33de4440",
+    "commit_message": "ci: tests_2x (TEST_SCALE=2)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 30.0,
+    "timestamp": "2026-06-03T17:09:38Z",
+    "lead_time_s": 36.0,
+    "test_count": 178,
+    "test_failures": 0,
+    "test_total_time_s": 0.347,
+    "avg_test_time_s": 0.0019,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 13.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900683781,
+    "commit_sha": "ec928cbe59db760d06e5a34858e338de65a00c5b",
+    "commit_message": "ci: tests_4x (TEST_SCALE=4)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 24.0,
+    "timestamp": "2026-06-03T17:10:18Z",
+    "lead_time_s": 31.0,
+    "test_count": 338,
+    "test_failures": 0,
+    "test_total_time_s": 0.496,
+    "avg_test_time_s": 0.0015,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 7.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900714589,
+    "commit_sha": "4b3ab31174000d66ab29c70c96ac04fbd5d629de",
+    "commit_message": "ci: tests_8x (TEST_SCALE=8)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 33.0,
+    "timestamp": "2026-06-03T17:10:54Z",
+    "lead_time_s": 42.0,
+    "test_count": 658,
+    "test_failures": 0,
+    "test_total_time_s": 0.804,
+    "avg_test_time_s": 0.0012,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 12.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 14.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900754647,
+    "commit_sha": "da4dc95519ca9613085271c585d4233fd855524d",
+    "commit_message": "ci: slow_test (ENABLE_SLOW=on)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 60.0,
+    "timestamp": "2026-06-03T17:11:41Z",
+    "lead_time_s": 68.0,
+    "test_count": 99,
+    "test_failures": 0,
+    "test_total_time_s": 30.222,
+    "avg_test_time_s": 0.3053,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 12.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 5.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 41.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 30.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900815013,
+    "commit_sha": "c23aa7344d47b6dbb313107c21e682223558026a",
+    "commit_message": "ci: failing (FORCE_FAIL=on)",
+    "status": "failure",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 25.0,
+    "timestamp": "2026-06-03T17:12:52Z",
+    "lead_time_s": 31.0,
+    "test_count": 98,
+    "test_failures": 1,
+    "test_total_time_s": 0.244,
+    "avg_test_time_s": 0.0025,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "failure",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "failure",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "skipped",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900842978,
+    "commit_sha": "0245d52bffd392fc57f8e0a7bfdb8a3a5c05c1d6",
+    "commit_message": "ci: pytest_parallel #1 (-n auto)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 32.0,
+    "timestamp": "2026-06-03T17:13:25Z",
+    "lead_time_s": 38.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.868,
+    "avg_test_time_s": 0.0089,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 14.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 4.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900881401,
+    "commit_sha": "76b01651ed203112b22e879ae8ba3085b8258a4e",
+    "commit_message": "ci: pytest_parallel #2 (-n auto) [repeat]",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 29.0,
+    "timestamp": "2026-06-03T17:14:10Z",
+    "lead_time_s": 37.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.934,
+    "avg_test_time_s": 0.0095,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 10.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900915412,
+    "commit_sha": "126c584f5e47f3068bd1ca3cbc030c891b813761",
+    "commit_message": "ci: pytest_parallel_4x (-n auto, 4x)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 29.0,
+    "timestamp": "2026-06-03T17:14:49Z",
+    "lead_time_s": 34.0,
+    "test_count": 338,
+    "test_failures": 0,
+    "test_total_time_s": 1.171,
+    "avg_test_time_s": 0.0035,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 12.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900950206,
+    "commit_sha": "f91162c2da813a995bdbfb5bd105bd3a1144a2e5",
+    "commit_message": "ci: jobs_parallel #1 (sem needs)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 18.0,
+    "timestamp": "2026-06-03T17:15:28Z",
+    "lead_time_s": 23.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.233,
+    "avg_test_time_s": 0.0024,
+    "jobs": [
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 12.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900973343,
+    "commit_sha": "1d2ac182153ca7812e03bb343918eebc7c593976",
+    "commit_message": "ci: jobs_parallel #2 (sem needs) [repeat]",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 17.0,
+    "timestamp": "2026-06-03T17:15:55Z",
+    "lead_time_s": 22.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.246,
+    "avg_test_time_s": 0.0025,
+    "jobs": [
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 13.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 5.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26900999098,
+    "commit_sha": "85204ae23ad35e2d2cd13ab80731be06dc3f7f3f",
+    "commit_message": "ci: jobs_parallel_2x (sem needs, 2x)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 15.0,
+    "timestamp": "2026-06-03T17:16:25Z",
+    "lead_time_s": 23.0,
+    "test_count": 178,
+    "test_failures": 0,
+    "test_total_time_s": 0.355,
+    "avg_test_time_s": 0.002,
+    "jobs": [
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 11.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 9.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26901019048,
+    "commit_sha": "abb47b1d7a0414ac5c2d53a400375283c126d6d4",
+    "commit_message": "ci: baseline_final (cache on, seq)",
+    "status": "success",
+    "run_attempt": 1,
+    "event": "push",
+    "workflow_duration": 31.0,
+    "timestamp": "2026-06-03T17:16:49Z",
+    "lead_time_s": 37.0,
+    "test_count": 98,
+    "test_failures": 0,
+    "test_total_time_s": 0.249,
+    "avg_test_time_s": 0.0025,
+    "jobs": [
+      {
+        "name": "lint",
+        "conclusion": "success",
+        "duration_s": 10.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Ruff (an\u00e1lise est\u00e1tica)",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "conclusion": "success",
+        "duration_s": 13.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Load experiment knobs",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Cache pip",
+            "conclusion": "success",
+            "duration_s": 3.0
+          },
+          {
+            "name": "Install dev deps",
+            "conclusion": "success",
+            "duration_s": 2.0
+          },
+          {
+            "name": "Run tests (pytest)",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Upload test reports",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Post Cache pip",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success",
+            "duration_s": 0.0
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success",
+            "duration_s": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration_s": 0.0
+          }
+        ]
+      }
+    ]
+  }
+]

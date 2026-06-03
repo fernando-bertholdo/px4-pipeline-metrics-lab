@@ -340,6 +340,11 @@ def main() -> int:
     ap.add_argument("--raw-dir", default="data/raw")
     ap.add_argument("--out-dir", default="data")
     ap.add_argument("--variation-log", default="data/variation_log.csv")
+    ap.add_argument(
+        "--only-logged",
+        action="store_true",
+        help="mantém apenas runs cujo commit_sha está no variation_log (descarta runs órfãos/aquecimento)",
+    )
     args = ap.parse_args()
 
     REPO = args.repo
@@ -362,6 +367,12 @@ def main() -> int:
 
     records.sort(key=lambda r: r["timestamp"] or "")
     variations = load_variation_log(Path(args.variation_log))
+
+    if args.only_logged and variations:
+        logged = set(variations.keys())
+        before = len(records)
+        records = [r for r in records if r["commit_sha"] in logged]
+        print(f"--only-logged: {len(records)}/{before} runs mantidos (canônicos do variation_log)")
 
     write_metrics_csv(records, out_dir / "metrics.csv")
     write_runs_csv(records, variations, out_dir / "metrics_runs.csv")

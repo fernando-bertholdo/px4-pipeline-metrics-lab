@@ -1,0 +1,18 @@
+run_id,commit_sha,variation,hypothesis,status,workflow_duration,lead_time_s,test_count,test_failures,avg_test_time_s,run_attempt,lint_duration_s,test_duration_s,install_deps_s,timestamp
+26900480405,11533356efdb,baseline,tempo de referência; 1o run popula o cache (cache frio),success,31.0,41.0,98,0,0.0026,1,11.0,11.0,3.0,2026-06-03T17:06:20Z
+26900514380,6a6273635625,baseline,repetição p/ variância (cache quente),success,26.0,34.0,98,0,0.0026,1,9.0,9.0,3.0,2026-06-03T17:07:01Z
+26900549710,cdaba569da16,baseline,repetição p/ variância (cache quente),success,27.0,35.0,98,0,0.0026,1,10.0,12.0,2.0,2026-06-03T17:07:42Z
+26900582645,93d12b19aa9d,no_cache,sem cache aumenta o install de deps,success,24.0,29.0,98,0,0.0024,1,8.0,10.0,4.0,2026-06-03T17:08:20Z
+26900612712,f16757329247,no_cache,repetição p/ variância do efeito de cache,success,28.0,36.0,98,0,0.0026,1,9.0,11.0,3.0,2026-06-03T17:08:55Z
+26900647962,831607e4ac63,tests_2x,2x testes: duração sobe de forma sublinear,success,30.0,36.0,178,0,0.0019,1,11.0,13.0,3.0,2026-06-03T17:09:38Z
+26900683781,ec928cbe59db,tests_4x,4x testes,success,24.0,31.0,338,0,0.0015,1,7.0,9.0,2.0,2026-06-03T17:10:18Z
+26900714589,4b3ab3117400,tests_8x,8x testes: reforça a regressão testes x duração,success,33.0,42.0,658,0,0.0012,1,12.0,14.0,2.0,2026-06-03T17:10:54Z
+26900754647,da4dc95519ca,slow_test,1 teste de 30s domina a cauda de duração,success,60.0,68.0,99,0,0.3053,1,12.0,41.0,3.0,2026-06-03T17:11:41Z
+26900815013,c23aa7344d47,failing,status=failure; fail-fast pode encurtar o run,failure,25.0,31.0,98,1,0.0025,1,9.0,9.0,2.0,2026-06-03T17:12:52Z
+26900842978,0245d52bffd3,pytest_parallel,SURPRESA: xdist deixa a suíte pequena MAIS lenta (overhead),success,32.0,38.0,98,0,0.0089,1,14.0,11.0,3.0,2026-06-03T17:13:25Z
+26900881401,76b01651ed20,pytest_parallel,repetição p/ variância,success,29.0,37.0,98,0,0.0095,1,10.0,11.0,3.0,2026-06-03T17:14:10Z
+26900915412,126c584f5e47,pytest_parallel_4x,com carga maior (4x) o paralelismo passa a compensar?,success,29.0,34.0,338,0,0.0035,1,11.0,12.0,3.0,2026-06-03T17:14:49Z
+26900950206,f91162c2da81,jobs_parallel,jobs concorrentes reduzem o wall-time total,success,18.0,23.0,98,0,0.0024,1,12.0,9.0,2.0,2026-06-03T17:15:28Z
+26900973343,1d2ac182153c,jobs_parallel,repetição p/ variância,success,17.0,22.0,98,0,0.0025,1,13.0,9.0,2.0,2026-06-03T17:15:55Z
+26900999098,85204ae23ad3,jobs_parallel_2x,jobs paralelos + 2x testes,success,15.0,23.0,178,0,0.002,1,9.0,11.0,2.0,2026-06-03T17:16:25Z
+26901019048,abb47b1d7a04,baseline_final,checagem de drift no fim do experimento,success,31.0,37.0,98,0,0.0025,1,10.0,13.0,2.0,2026-06-03T17:16:49Z
